@@ -191,6 +191,9 @@ nav.scrolled{
   background:linear-gradient(125deg,rgba(255,255,255,.42) 0%,transparent 34%,transparent 62%,rgba(255,255,255,.16) 100%);
 }
 .g-card .ph{width:100%;height:100%;position:relative}
+.g-card video{
+  width:100%;height:100%;display:block;object-fit:cover;background:#071f18;
+}
 .g-card.center{flex-basis:296px}
 .g-card.center .ph::after{
   content:"";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
@@ -473,15 +476,15 @@ footer .f-en{font-family:var(--serif);font-style:italic;letter-spacing:.2em;disp
   <p>专注短视频内容创作 —— 口播、Vlog、商业广告、剧情、海外短视频与 AIGC，每一帧都经得起推敲。</p>
   <p>Short-form video · Vlog · Commercial · Drama · Global · AIGC</p>
 
-  <!-- 透视画廊（可替换为视频封面图） -->
+  <!-- 透视视频画廊 -->
   <div class="gallery-strip">
-    <div class="g-card" style="--ry:38deg;--s:.82"><div class="ph v1"></div></div>
-    <div class="g-card" style="--ry:24deg;--s:.9"><div class="ph g1"></div></div>
-    <div class="g-card" style="--ry:10deg;--s:.96"><div class="ph v2"></div></div>
-    <div class="g-card center" style="--ry:0deg;--s:1"><div class="ph v3"></div><span class="play">▶</span></div>
-    <div class="g-card" style="--ry:-10deg;--s:.96"><div class="ph g2"></div></div>
-    <div class="g-card" style="--ry:-24deg;--s:.9"><div class="ph v1"></div></div>
-    <div class="g-card" style="--ry:-38deg;--s:.82"><div class="ph v2"></div></div>
+    <div class="g-card" style="--ry:38deg;--s:.82"><video src="videos/fashion.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="g-card" style="--ry:24deg;--s:.9"><video src="videos/tiktok-commerce.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="g-card" style="--ry:10deg;--s:.96"><video src="videos/beauty.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="g-card center" style="--ry:0deg;--s:1"><video src="videos/instagram-reels.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="g-card" style="--ry:-10deg;--s:.96"><video src="videos/cinematic-story.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="g-card" style="--ry:-24deg;--s:.9"><video src="videos/ai-drama.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="g-card" style="--ry:-38deg;--s:.82"><video src="videos/travel-vlog.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
   </div>
 
   <div class="hero-scroll"><span>SCROLL</span><span class="line"></span></div>
